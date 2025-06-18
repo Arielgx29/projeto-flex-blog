@@ -234,6 +234,141 @@ flex: 2 1 300px;
         background:#2C70ff;
     }
 
-    .botao {
-        
+    .card-botao {
+       border: 4px solid #222222; 
+       display: block;
+       max-width: 300px;
+       margin: 20px auto;
+       
+    }
+
+    .button {
+        padding: 20px;
+        display: flex;
+        font-weight: bold;
+        font-size: 2.20em;
+        text-transform: uppercase;
+        width: 100%;
+    }
+
+    #box-qualidades {
+        max-width: 960px;
+        margin: 60px auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .item-qualidade {
+        flex: 1 1 300px;
+        margin: 20px 10px;
+    }
+
+    .titulo-qualidade {
+        font-size: 2.25em;
+        color: #A4A4A4;
+        text-align: left;
+        padding-bottom: 20px;
+    }
+
+    .item-qualidade p {
+        font-size: 1.25em;
+        color: #7C7C7C;
+        line-height: 1.4;
+    }
+
+    .item-qualidade:nth-of-type(3n+1) .titulo-qualidade::before{
+        content:'';
+        display: inline-block;
+        margin-right: 10px;
+        width: 8px;
+        height: 30px;
+        background:  #AE81FF;
+    }
+
+    .item-qualidade:nth-of-type(3n+2) .titulo-qualidade::before{
+        content: '';
+        display: inline-block;
+        height: 30px;
+        width: 8px;
+        background: #F9265E;
+        margin-right: 10PX;
+    }
+
+    .item-qualidade:nth-of-type(3n+3) .titulo-qualidade::before{
+        display: inline-block;
+        content: '';
+        height: 30px;
+        width: 8px;
+        background: rgb(66, 175, 226);
+        margin-right: 10px;
+    }
+
+    #assinatura {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        background:#f1eded;
+        padding: 60px calc(100% - 960px / 2 );
+    }
+
+    .contato{
+         flex: 1 1 240px;
+         padding: 10px 0;
+         margin: 0 10px;
+    }
+    
+    .contato p {
+        color:#7C7C7C;
+        font-size: 1.25em;
+        font-style: italic;
+        line-height: 1.4;
+    }
+
+    .desc-assinatura{
+       color: #A4A4A4;
+        font-size: 3em;
+        text-align: left;
+    }
+
+    form{
+        flex: 2 1 260px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 0px;
+        margin: 0px 10px;
+    }
+
+    form input {
+        border: 4px solid #2c70ff;
+        padding: 15px 10px;
+        font-size: 2.20em;
+        font-weight: bold;
+        font-style: italic;
+        background: transparent;
+        border-radius: 0px;
+        flex: 3 1 260px;
+    }
+
+    form button {
+        padding: 15px 10px;
+        font-size: 2.25em;
+        font-weight: bold;
+        font-style: italic;
+        text-transform: uppercase;
+        color: white;
+        background: #2C70ff;
+        cursor: pointer;
+        flex: 1 1 260px;
+    }
+
+    footer {
+        background: #2C70ff;
+    }
+
+    footer p {
+        padding: 75px;
+        color:  #122ab2;
+        font-size: 2.25em;
+        text-align: center;
+        width: 100%;
     }
